@@ -1,0 +1,126 @@
+.kaoyan {
+  overflow: hidden;
+  font-family: PingFang SC;
+  background: #fff;
+  :global {
+    .ant-back-top {
+      right: 90px;
+      bottom: 110px;
+    }
+  }
+  &-nav {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 52px;
+    line-height: 52px;
+    background: #fff;
+    box-shadow: 0px 2px 4px rgba(27, 31, 35, 0.08);
+    .title-img {
+      height: 19px;
+      margin-right: 92px;
+      vertical-align: middle;
+    }
+    &_item {
+      position: relative;
+      display: inline-block;
+      margin-right: 72px;
+      color: #666;
+      font-size: 16px;
+      text-decoration: none;
+      cursor: pointer;
+      .dropdown-icon {
+        position: absolute;
+        top: 21px;
+        right: -18px;
+        width: 10px;
+        height: 10px;
+        transform: rotate(180deg);
+      }
+    }
+    .active {
+      color: #ff3f29;
+      font-weight: 500;
+    }
+    .active::after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 24px;
+      height: 4px;
+      background: #ff3f29;
+      border-radius: 100px;
+      transform: translateX(-50%);
+      content: ' ';
+    }
+  }
+}
+.toTop {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  img {
+    width: 24px;
+    height: 20px;
+    margin-bottom: 3px;
+  }
+}
+.toolbar {
+  position: fixed;
+  right: 10px;
+  bottom: 150px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 136px;
+
+  &_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 17px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .toTop {
+    position: relative;
+    left: 16px;
+    width: 64px;
+    height: 60px;
+    margin: 0;
+  }
+  .kefu {
+    img {
+      width: 180px;
+      height: 190px;
+    }
+  }
+}
+
+.kaoyan-dropdown {
+  :global {
+    .ant-dropdown-menu {
+      padding: 10px 5px;
+    }
+    .ant-dropdown-menu-item {
+      padding: 8px 16px;
+      color: rgba(20, 20, 20, 0.9) !important;
+      font-size: 14px;
+      text-align: center;
+    }
+    .ant-dropdown-menu-item:hover {
+      color: rgba(20, 20, 20, 0.9);
+      font-weight: 500;
+      background-color: #f1f2f2;
+      border-radius: 4px;
+    }
+  }
+  .highlight {
+    color: #ff3f29;
+    font-weight: 500;
+  }
+}

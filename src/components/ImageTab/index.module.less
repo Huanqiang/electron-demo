@@ -1,0 +1,50 @@
+.imgtab {
+  :global {
+    .header {
+      display: flex;
+      justify-content: center;
+      .tab {
+        height: 64px;
+        line-height: 64px;
+        background: #f5f6f8;
+        backdrop-filter: blur(2px);
+        border-radius: 8px;
+        color: #666666;
+        font-size: 18px;
+        text-align: center;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+      .tab:first-child {
+        margin-left: 0;
+      }
+      .active {
+        background: rgba(255, 63, 41, 0.06);
+        color: #111;
+        font-weight: 500;
+        position: relative;
+      }
+      .active::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 60px;
+        height: 4px;
+        background: #ff3f29;
+        border-radius: 27px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .content {
+      margin-top: 46px;
+      position: relative;
+      img {
+        position: absolute;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}

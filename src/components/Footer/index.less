@@ -1,0 +1,178 @@
+/* 全站底部 */
+.m-yktfoot {
+  overflow: hidden;
+  background: #474443;
+  &_share {
+    &_weixin {
+      position: relative;
+      top: -1px;
+      float: right;
+      margin-right: 20px;
+    }
+    &_weibo {
+      position: relative;
+      top: -1px;
+      float: right;
+    }
+  }
+  &_wrapper {
+    position: relative;
+    margin: 0 auto;
+    color: #fff;
+    line-height: 23px;
+  }
+
+  &_lf {
+    width: 900px;
+    padding: 36px 0;
+  }
+
+  &_about {
+    line-height: 19px;
+    > a {
+      margin-right: 17px;
+      padding: 0;
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &_txt {
+    width: 740px;
+    margin-bottom: 11px;
+    line-height: 22px;
+  }
+
+  &_rt {
+    padding: 30px 0px 0;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: right;
+
+    // a,p,span{
+    //     color: #fff;
+    // }
+
+    // a:hover{
+    //     text-decoration:underline;
+    // }
+  }
+
+  &_copy {
+    margin: 10px 0 0;
+    color: #999;
+    font-size: 14px;
+    &_link {
+      color: #999;
+    }
+    &_link:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+
+  &_mobile {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &_mlogo1,
+  &_mlogo2 {
+    display: block;
+    float: left;
+    width: 111px;
+    height: 32px;
+    margin-left: 10px;
+    background: url(//s.stu.126.net/res/images/ui/download_icon.png) no-repeat 0 0;
+  }
+  &_mlogo2 {
+    padding-left: 0;
+    background-position: 0 -42px;
+  }
+
+  &_tit {
+    float: right;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  &_weibo,
+  &_renren,
+  &_weixin,
+  &_yixin {
+    display: block;
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin: 2px 0 0 4px;
+    background: url(//s.stu.126.net/res/images/ui/shareLinkUI.png) no-repeat;
+    background-position: -34px -52px;
+  }
+  &_renren {
+    background-position: -34px -72px;
+  }
+  &_yixin {
+    background-position: -7px -72px;
+  }
+  &_weixin {
+    background-position: -7px -52px;
+  }
+  &_tipQrcode {
+    bottom: 30px;
+    left: -63px;
+    z-index: 999;
+    display: none;
+    width: 120px;
+    height: 150px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+  &_qrTitle {
+    color: #999;
+    font-size: 14px;
+    font-family: '微软雅黑';
+  }
+
+  &_tip {
+    right: 62px;
+    bottom: -9px;
+    width: 14px;
+    height: 10px;
+    background: url('//s.stu.126.net/res/images/qrcode/tip.png') no-repeat;
+  }
+
+  &_weixin:hover,
+  &_yixin:hover {
+    .m-yktfoot_tipQrcode {
+      display: block;
+    }
+  }
+
+  .g-ft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .g-flow {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .f-fr {
+    float: right;
+  }
+  .f-fl {
+    float: left;
+  }
+  .f-cb,
+  .f-cbli li {
+    zoom: 1;
+  }
+}

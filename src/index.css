@@ -1,0 +1,12 @@
+#root {
+  position: relative;
+  overflow: hidden;
+}
+body {
+  margin: 0;
+}
+.g-flow {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
