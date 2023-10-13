@@ -1,6 +1,6 @@
 import { BackTop } from 'antd'
 import classNames from 'classnames'
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import s from './index.module.less'
 
 const ROUTE = {
@@ -9,6 +9,7 @@ const ROUTE = {
 }
 
 export default function () {
+  const location = useLocation()
   const route = location.pathname
   const navigate = useNavigate()
 
